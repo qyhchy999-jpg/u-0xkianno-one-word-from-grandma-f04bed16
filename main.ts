@@ -13,6 +13,8 @@ import { join } from "node:path";
 // family knows exactly which glowing box she means. One word, instantly
 // grandma-like: warm, unbothered by the correct name, and funnier than
 // any proper noun because the vagueness is the whole joke.
+// The joke is her confidence: she never needs the right name to be right.
+// A word every family already hears at home — instantly familiar, warm.
 const LINE = "thingummy";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
