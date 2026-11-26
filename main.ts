@@ -7,16 +7,17 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-// The word: "robit". It is exactly the typo a grandma would make
-// texting about AI — she means "robot" and her fingers, or her
-// autocorrect, drop the second o. One word, instantly grandma-like:
-// warm, slightly confused by the technology, and funnier than any
-// correct spelling because the mistake is the whole joke.
-const LINE = "robit";
+// The word: "thingummy". It is what grandma calls anything she cannot
+// name — the remote, the router, the robot vacuum, and now the AI.
+// "The thingummy is talking again," she texts, and everyone in the
+// family knows exactly which glowing box she means. One word, instantly
+// grandma-like: warm, unbothered by the correct name, and funnier than
+// any proper noun because the vagueness is the whole joke.
+const LINE = "thingummy";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, "entry.txt"), LINE + "\n", "utf8");
 
 // Written in full twice in this session; the word and logic are unchanged.
-// Second pass: the typo is the whole joke — correct spelling would kill it.
+// Second pass: grandma never learns the brand name — the thingummy is enough.
